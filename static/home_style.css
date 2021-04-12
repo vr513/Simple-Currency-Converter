@@ -1,0 +1,22 @@
+h1 {
+    color:gold;
+    font-style: italic;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-variant:unset;
+    }
+option {
+        color:navy;
+        font-style:oblique;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+button {
+       color:purple;
+       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+       font-size:x-large;
+       }
+footer {
+       color:darkturquoise;
+       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+       font-weight: 200;   
+}       
