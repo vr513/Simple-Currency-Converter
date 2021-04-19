@@ -17,5 +17,7 @@ def convert(from_currency, to_currency, amount):
 from_country = sys.argv[1]
 to_country = sys.argv[2]
 amount = int(sys.argv[3])
+print(from_country, to_country, amount)
+
 
 new_amount = convert(from_country, to_country, amount)
