@@ -14,6 +14,10 @@ def external(request):
         main_output ='Please fill all the required feilds'
         print(main_output)
         return render(request, 'home.html', {'output': main_output})
+    if not amount.isnumeric():
+        main_output = 'Please enter numerical value in Amount field'
+        print(main_output)
+        return render(request, 'home.html', {'output': main_output})
     else:
         out = run([sys.executable, 'C:\\Users\\Varad\\Desktop\\PblFinal\\main.py', inp1, inp2 ,amount], shell=True, stdout= PIPE)
         main_output = (out.stdout).decode("ascii")
