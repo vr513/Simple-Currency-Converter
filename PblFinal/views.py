@@ -19,7 +19,7 @@ def external(request):
         print(main_output)
         return render(request, 'home.html', {'output': main_output})
     else:
-        out = run([sys.executable, 'C:\\Users\\Varad\\Desktop\\PblFinal\\main.py', inp1, inp2 ,amount], shell=True, stdout= PIPE)
+        out = run([sys.executable, 'main.py', inp1, inp2 ,amount], shell=True, stdout= PIPE)
         main_output = (out.stdout).decode("ascii")
         print(main_output)
         return render(request, 'home.html', {'output': main_output})
